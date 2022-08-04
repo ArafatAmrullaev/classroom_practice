@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'classroom_practice',
+        'NAME': 'classpr',
         'USER': 'arafat',
         'PASSWORD': '1',
         'HOST': 'localhost',

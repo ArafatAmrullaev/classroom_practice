@@ -11,10 +11,10 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
     def to_representation(self, instance):
-        rep = super().to_representation(instance)
-        rep['reviews'] = ReviewSerializer(instance.reviews.all(), many=True).data
+        repr = super().to_representation(instance)
+        repr['reviews'] = ReviewSerializer(instance.reviews.all(), many=True).data
 
-        return rep
+        return repr
 
 class CategorySerializer(serializers.ModelSerializer):
     class Meta:
